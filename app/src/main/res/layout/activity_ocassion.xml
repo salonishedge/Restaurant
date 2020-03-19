@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.restaurant.Ocassion"
+    android:fillViewport="true"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@android:color/darker_gray"
+
+
+    tools:context="com.example.restaurant.Ocassion">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Occasion"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:textSize="50dp"
+        android:id="@+id/txt11"
+        android:textStyle="bold">
+
+    </TextView>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/background_light"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt11">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Birthday"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/birthday"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg3"
+            android:padding="0.2dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Meeting"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/meeting1"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg3"
+            android:padding="0.2dp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Casual Dining"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/casualdining1"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg3"
+            android:padding="0.2dp"
+            />
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Date"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/date1"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg3"
+            android:padding="0.2dp"
+            />
+        <RadioButton
+            android:id="@+id/radio_five"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Family GetTogether"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/familygettogether1"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg3"
+            android:padding="0.2dp"
+            />
+        <RadioButton
+            android:id="@+id/radio_six"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Fine Dining"
+            android:textSize="30dp"
+            android:fontFamily="cursive"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/familydinner"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg3"
+            android:padding="0.2dp"
+            />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Your selection: "
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="Your selection: "
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_selected"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Next"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
+</ScrollView>

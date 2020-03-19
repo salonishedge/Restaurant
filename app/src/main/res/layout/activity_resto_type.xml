@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.restaurant.RestoType"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"
+
+
+        tools:context="com.example.restaurant.RestoType">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Type"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="25dp"
+            android:fontFamily="cursive"
+            android:textSize="50dp"
+            android:id="@+id/txt11"
+            android:textStyle="bold">
+
+        </TextView>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_marginTop="100dp"
+            android:background="@android:color/background_light"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/txt11"
+
+
+            >
+
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Fine Dining"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/finedinning"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+
+
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Lounge"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/lounge"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+
+
+            <RadioButton
+                android:id="@+id/radio_three"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Bar"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bar"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_four"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Quick Bites"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/quickbites"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_five"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Casual Dining"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/casualdining1"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_six"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Desert Parlour"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dessertparlour"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_seven"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Cafe"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cafe1"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_eight"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Baker"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bakery1"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_nine"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Sweet Shop"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sweetshop1"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+            <RadioButton
+                android:id="@+id/radio_ten"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:text="Food Court"
+                android:textSize="30dp"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/foodcourt1"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bg3"
+                android:padding="0.2dp"
+                />
+
+
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_view_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="Your selection: "
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_selected"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:text="Next"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>
